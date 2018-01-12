@@ -1,0 +1,21 @@
+{
+	"name": "program",
+	"author": "kieferrm",
+	"license": "MIT",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kieferrm/ts-compilation-example"
+	},
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"scripts": {
+		"compile": "../node_modules/.bin/tsc -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"dependencies": {
+		"library": "0.0.1",
+		"vscode": "^1.1.10"
+	}
+}
