@@ -5,7 +5,7 @@
 	"version": "0.0.1",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/kieferrm/ts-compilation-example"
+		"url": "https://github.com/kieferrm/nested-vscode-dependencies"
 	},
 	"engines": {
 		"vscode": "^1.18.0"
