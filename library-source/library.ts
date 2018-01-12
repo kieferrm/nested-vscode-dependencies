@@ -1,8 +1,11 @@
-import * as vscode from 'vscode';
+import {CompletionItemProvider, TextDocument, Position, CancellationToken, CompletionContext, ProviderResult, CompletionItem, CompletionList, languages} from 'vscode';
 
-vscode.window.onDidChangeActiveTextEditor((e: vscode.TextEditor) => {
-    console.log(e.document.fileName);
-});
+let p : CompletionItemProvider = {
+    provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken, context: CompletionContext): ProviderResult<CompletionItem[] | CompletionList> {
+        return null;
+    }
+}
+languages.registerCompletionItemProvider('s', p);
 
 export const FILENAME = 'file name';
 
